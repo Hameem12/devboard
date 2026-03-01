@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Board</title>
+    <!-- Tailwind css and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .bg-default {
+            background-color: #F4F7FF;
+        }
+
+        .bg-sub {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body class="bg-default pt-6">
+    <div class="flex justify-between items-center mb-4 bg-sub
+    w-11/12 mx-auto px-6 py-3 rounded-xl">
+        <div class="flex justify-center items-center gap-2">
+            <img src="./assets/logo.png" alt="">
+            <h2>Dev<span>Board</span></h2>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+            <input class="transform scale-150" type="checkbox" name="" id="">
+            <p id="total" class="text-2xl font-bold">23</p>
+            <img id="theme" src="./assets/theme-btn.png" alt="">
+        </div>
+    </div>
+    <div class="w-11/12 mx-auto grid grid-cols-5 gap-2">
+    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-4">
+        <div class="grid grid-cols-3 gap-6 mb-3">
+            <div class="card1 bg-default flex items-center gap-9 pl-20 px-3 rounded-lg">
+                <div class="transform scale-150"><input type="checkbox" name="" id=""></div>
+                <div>
+                    <h5> Task Assigned</h5>
+                    <h3 id="task" class="text-2xl font-bold">6</h3>
+                </div>
+            </div>
+            <div id="new-page" class="card2 bg-gradient-to-br from-blue-800 via-blue-700 to-blue-200 flex items-center px-3 py-6 gap-3 rounded-lg">
+                <img src="./assets/board.png" alt="">
+                <h3>Discover Something <br>New Today!</h3>
+            </div>
+            <div class="card3 bg-default flex items-center flex-col gap-3 px-3 py-6 rounded-lg">
+                <img src="./assets/calender.png" alt="">
+                <div id="currentDate"></div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="Card-one bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-2/6">ShopEase</p>
+                    <h5 id="title-one">Fix Mobile Button Issue </h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-one" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+            <div class="Card-two bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-2/6">CloudSync</p>
+                    <h5 id="title-two">Add Dark Mode</h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-two" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+            <div class="Card-three bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-2/6">SwiftPay</p>
+                    <h5 id="title-three">Optimize Home page</h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-three" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+            <div class="Card-four bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-2/6">Meta</p>
+                    <h5 id="title-four">Add new emoji 🤲</h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-four" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+            <div class="Card-five bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-3/6">Google LLC</p>
+                    <h5 id="title-five">Integrate OpenAI API </h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-five" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+            <div class="Card-six bg-default p-6">
+                <div class="flex flex-col gap-4 mb-2">
+                    <p class="bg-sub p-2 rounded-md w-2/6">GlassDoor</p>
+                    <h5 id="title-six">Improve Job searching </h5>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    </p>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-col">
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button id="btn-six" class="btn btn-primary text-white">Completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-1">
+        <div class="flex justify-center items-center mb-3">
+            <img src="./assets/activity.png" alt="">
+            <p>Activity Log</p>
+        </div>
+        
+        <div class="flex justify-center items-center">
+            <button id="clear" class="btn btn-primary text-white">Clear History</button>
+        </div>
+        <div id="history"></div>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("currentDate").innerText = new Date().toDateString();
+    </script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
