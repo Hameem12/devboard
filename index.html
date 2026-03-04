@@ -41,15 +41,15 @@
         <div class="flex justify-center items-center gap-2">
             <input class="transform scale-150" type="checkbox" name="" id="">
             <p id="total" class="text-2xl font-bold">23</p>
-            <img id="theme" src="./assets/theme-btn.png" alt="">
+            <img id="theme" class="w-7 h-7" src="./assets/theme-btn.png" alt="">
         </div>
     </div>
     <div class="w-11/12 mx-auto grid grid-cols-5 gap-2">
-    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-4">
-        <div class="grid grid-cols-3 gap-6 mb-3">
-            <div class="card1 bg-default flex items-center gap-9 pl-20 px-3 rounded-lg">
-                <div class="transform scale-150"><input type="checkbox" name="" id=""></div>
-                <div>
+    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-3 md:col-span-4">
+        <div class="grid gap-6 mb-3 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card1 bg-default flex items-center justify-center gap-9 pl-20 px-3 rounded-lg h-16 md:h-auto">
+                <div class="transform scale-150 -ml-6"><input type="checkbox" name="" id=""></div>
+                <div class=" flex flex-row items-center gap-4">
                     <h5> Task Assigned</h5>
                     <h3 id="task" class="text-2xl font-bold">6</h3>
                 </div>
@@ -63,7 +63,7 @@
                 <div id="currentDate"></div>
             </div>
         </div>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div class="Card-one bg-default p-6">
                 <div class="flex flex-col gap-4 mb-2">
                     <p class="bg-sub p-2 rounded-md w-2/6">ShopEase</p>
@@ -71,7 +71,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -86,7 +86,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -101,7 +101,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -116,7 +116,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -131,7 +131,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -146,7 +146,7 @@
                     <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row justify-between gap-3 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <p>Deadline</p>
                         <p>21 March 2025</p>
@@ -156,7 +156,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-1">
+    <div class="bg-sub mb-4 px-6 py-3 rounded-xl col-span-2 md:col-span-1">
         <div class="flex justify-center items-center mb-3">
             <img src="./assets/activity.png" alt="">
             <p>Activity Log</p>
